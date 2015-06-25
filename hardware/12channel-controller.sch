@@ -1,0 +1,159 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:crumpschemes
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Pro_Mini U?
+U 1 1 558B7116
+P 3050 1850
+F 0 "U?" H 2750 2600 60  0000 C CNN
+F 1 "Arduino_Pro_Mini" H 3050 -100 60  0000 C CNN
+F 2 "" H 3050 1850 60  0000 C CNN
+F 3 "" H 3050 1850 60  0000 C CNN
+	1    3050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TIP122 Q?
+U 1 1 558B7140
+P 6550 2150
+F 0 "Q?" H 6500 2000 40  0000 R CNN
+F 1 "TIP122" H 6550 2300 40  0000 R CNN
+F 2 "TO220" H 6430 2255 29  0001 C CNN
+F 3 "" H 6550 2150 60  0000 C CNN
+	1    6550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 558B71BF
+P 6050 2150
+F 0 "R?" V 6130 2150 50  0000 C CNN
+F 1 "1k" V 6057 2151 50  0000 C CNN
+F 2 "" V 5980 2150 30  0000 C CNN
+F 3 "" H 6050 2150 30  0000 C CNN
+	1    6050 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 558B71EC
+P 6550 1650
+F 0 "P1" H 6550 1800 50  0000 C CNN
+F 1 "CONN_01X02" V 6650 1650 50  0000 C CNN
+F 2 "" H 6550 1650 60  0000 C CNN
+F 3 "" H 6550 1650 60  0000 C CNN
+	1    6550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 558B7531
+P 6900 1650
+F 0 "D?" H 6900 1750 50  0000 C CNN
+F 1 "1N4007" H 6900 1550 50  0000 C CNN
+F 2 "" H 6900 1650 60  0000 C CNN
+F 3 "" H 6900 1650 60  0000 C CNN
+	1    6900 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 558B7618
+P 6650 1300
+F 0 "#PWR?" H 6650 1150 60  0001 C CNN
+F 1 "VCC" H 6650 1450 60  0000 C CNN
+F 2 "" H 6650 1300 60  0000 C CNN
+F 3 "" H 6650 1300 60  0000 C CNN
+	1    6650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 558B762C
+P 6650 2450
+F 0 "#PWR?" H 6650 2200 60  0001 C CNN
+F 1 "GND" H 6650 2300 60  0000 C CNN
+F 2 "" H 6650 2450 60  0000 C CNN
+F 3 "" H 6650 2450 60  0000 C CNN
+	1    6650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 558B7857
+P 5800 2450
+F 0 "R?" V 5880 2450 50  0000 C CNN
+F 1 "10k" V 5807 2451 50  0000 C CNN
+F 2 "" V 5730 2450 30  0000 C CNN
+F 3 "" H 5800 2450 30  0000 C CNN
+	1    5800 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 2200 5800 2150
+Wire Wire Line
+	6300 2150 6350 2150
+Wire Wire Line
+	6650 2350 6650 2450
+Wire Wire Line
+	6350 1950 6900 1950
+Wire Wire Line
+	6350 1950 6350 1700
+Wire Wire Line
+	6900 1950 6900 1850
+Wire Wire Line
+	6900 1300 6900 1450
+Wire Wire Line
+	6350 1300 6900 1300
+Wire Wire Line
+	6350 1600 6350 1300
+Connection ~ 6650 1950
+Connection ~ 6650 1300
+Text GLabel 5800 2750 3    60   Input ~ 0
+D2
+Wire Wire Line
+	5800 2700 5800 2750
+$EndSCHEMATC
